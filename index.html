@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni-Sync | Кристал Майбутнього</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-purple: #6a1b9a;
+            --neon-pink: #ff4081;
+            --deep-space: #0f051d;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --text-light: #e0e0e0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Exo 2', sans-serif;
+            background: radial-gradient(circle at center, #1a0b2e 0%, #05020a 100%);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--neon-pink);
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.5);
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(15, 5, 29, 0.7), rgba(15, 5, 29, 0.9)), url('img/main-crystal.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081; }
+            to { text-shadow: 0 0 20px #6a1b9a, 0 0 40px #6a1b9a; }
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        .section {
+            margin-bottom: 80px;
+            padding: 30px;
+            background: var(--glass-bg);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .feature-card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border-left: 4px solid var(--neon-pink);
+            margin-bottom: 15px;
+        }
+
+        .img-box img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(106, 27, 154, 0.6);
+        }
+
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .stats-table th, .stats-table td {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 64, 129, 0.3);
+            text-align: left;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="hero-title">Omni-Sync</h1>
+        <p>Наступний крок в еволюції матерії</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="section">
+            <div class="grid">
+                <div>
+                    <h2>Що таке Omni-Sync?</h2>
+                    <p>Кристал <strong>Omni-Sync</strong> — це не просто мінерал, а інтелектуальна гібридна структура. Він був розроблений для подолання «фізичної стелі» сучасних матеріалів, об’єднуючи в собі фотонні, електронні та квантові властивості в межах однієї решітки.</p>
+                    <p>На відміну від кремнію чи рубіну, Omni-Sync використовує градієнтну структуру ізотопів, що дозволяє керувати потоком частинок без енергетичних втрат.</p>
+                </div>
+                <div class="img-box">
+                    <img src="img/ancient-tech.jpg" alt="Omni-Sync Crystal in ancient temple">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Технічні Характеристики</h2>
+            <div class="grid">
+                <div class="img-box">
+                    <img src="img/lab-process.jpg" alt="Omni-Sync Laboratory Testing">
+                </div>
+                <div>
+                    <table class="stats-table">
+                        <tr>
+                            <th>Властивість</th>
+                            <th>Показник</th>
+                        </tr>
+                        <tr>
+                            <td>Теплопровідність</td>
+                            <td>Екстремально висока (без перегріву)</td>
+                        </tr>
+                        <tr>
+                            <td>Пропускна здатність</td>
+                            <td>До 1 Тбіт/с на наноканал</td>
+                        </tr>
+                        <tr>
+                            <td>Стійкість</td>
+                            <td>До агресивних середовищ та радіації</td>
+                        </tr>
+                        <tr>
+                            <td>Квантова стабільність</td>
+                            <td>99.9% при кімнатній температурі</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 style="text-align: center;">Чому це важливо?</h2>
+            <div class="grid">
+                <div class="feature-card">
+                    <h3>Подолання теплового шуму</h3>
+                    <p>Завдяки лазерній корекції дефектів решітки, кристал не нагрівається навіть при екстремальних обчислювальних навантаженнях.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Універсальність спектру</h3>
+                    <p>Можливість одночасної роботи з різними довжинами хвиль, що робить його ідеальним для оптоволоконних систем нового покоління.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Стабільність Кубіта</h3>
+                    <p>Використання як стабільного кубіта у квантових комп'ютерах, що вирішує проблему швидкої декогеренції.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Синхронізація частинок</h3>
+                    <p>Синхронізований рух електронів та фотонів забезпечує швидкість передачі даних у 100 разів вищу за існуючі аналоги.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center;">
+            <h2>Майбутнє вже тут</h2>
+            <p>Omni-Sync — це перехід від використання того, що дає природа, до програмування матерії під конкретні задачі людства. Це фундамент для створення штучного інтелекту нового рівня та міжзоряного зв'язку.</p>
+        </section>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Проєкт "Еволюція Матерії". Виконавець: Ксенія Литвиненко.</p>
+        <p>Запорізький Авіаційний Фаховий коледж ім. О.Г.Івченка</p>
+    </div>
+
+</body>
+</html> 
